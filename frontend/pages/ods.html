@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ações Sustentáveis</title>
+    <link rel="stylesheet" href="../style/ods.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1">Ações Sustentáveis</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="ods.html">ODS</a>
+            <a href="login.html" id="logout">Sair</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Registrar Nova Ação Sustentável</h2>
+        <form id="actionForm">
+            <input type="text" id="title" placeholder="Título" required>
+            <textarea id="description" placeholder="Descrição" required></textarea>
+            <select id="category" required>
+                <option value="Reciclagem">Reciclagem</option>
+                <option value="Energia">Energia</option>
+                <option value="Água">Água</option>
+                <option value="Mobilidade">Mobilidade</option>
+            </select>
+            <input type="number" id="points" placeholder="Pontos" required>
+            <button type="submit">Adicionar Ação</button>
+        </form>
+        
+        <h2>Ações Registradas</h2>
+        <ul id="actionsList"></ul>
+    </main>
+    
+    <script src="../scripts/ods.js"></script>
+</body>
+</html>
